@@ -5,14 +5,12 @@
     //Run a loop to compare each string character with 7 options. Make a list of figures out of it
     //Sum up the list to get a number, taking into account exceptions - I, X, C before V, L, D
     
-    //Run through code on test value III
-    
-    int strSize = s.Length - 1; //2
-    int[] array = new int[s.Length]; //3
-    int arrSize = array.Length-1; //2
-    int num = 0; //result initial value
+    int strSize = s.Length - 1;
+    int[] array = new int[s.Length];
+    int arrSize = array.Length-1;
+    int num = 0; //final result initial value
 
-    //Fillup int array from input string.
+    //Fill-up int array from input string.
     for (int i = strSize; i >= 0; i--) 
     {
         if (s[i] == 'I') array[i] = 1; 
