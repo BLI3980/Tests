@@ -67,7 +67,7 @@ Console.WriteLine(); //Spacer line
 Console.WriteLine(); //Spacer line
 */
 
-// OPTION 1. Code without Methods.
+// OPTION 2. Code with Methods.
 
 void FillArray(int[,] array, int size) // Fill 2D array spirally from top left corner until the center of the array
 {
