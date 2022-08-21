@@ -27,26 +27,9 @@
 
 // Console.WriteLine(digit);
 double number = 27;
-double power = 1/3.0;
+double power = 1 / 3.0;
 Console.WriteLine(power);
-double result = Math.Pow(number,power);
+double result = Math.Pow(number, power);
 Console.WriteLine(result);
-int a=1+2;
 
-for (int i = 0; i < length; i++)
-{
-    
-}
-while (true)
-{
-    
-}
-else
-{
-    
-}
-if (true)
-{
-    
-}
-else
+
