@@ -51,28 +51,44 @@
     Console.WriteLine("min: " + min);
     Console.WriteLine($"Разница между макс и мин значениями: {max - min}");
 */
+//=====================================================
+/*
+    void FOR1(int i)
+    {
+        if (i > 10) return;
+        Console.Write($"{i} ");
+        FOR1(i + 1);
+    }
 
-void FOR1(int i)
-{
-    if (i > 10) return;
-    Console.Write($"{i} ");
-    FOR1(i + 1);
-}
+    void FOR2(int i)
+    {
+        if (i > 10) return;
+        FOR2(i + 1);
+        Console.Write($"{i} ");
+    }
 
-void FOR2(int i)
-{
-    if (i > 10) return;
-    FOR2(i + 1);
-    Console.Write($"{i} ");
-}
-
-FOR1(1);
-Console.WriteLine();
-FOR2(1);
-// Почему FOR1(1); покажет
-// 1 2 3 4 5 6 7 8 9 10
+    FOR1(1);
+    Console.WriteLine();
+    FOR2(1);
+    // Почему FOR1(1); покажет
+    // 1 2 3 4 5 6 7 8 9 10
 
 
-// а FOR2(1);
-// покажет
-// 10 9 8 7 6 5 4 3 2 1
+    // а FOR2(1);
+    // покажет
+    // 10 9 8 7 6 5 4 3 2 1
+*/
+//=====================================================
+// Console.WriteLine("Enter a number: ");
+// string? name = Console.ReadLine();
+// int a = int.Parse(name!);
+// Console.WriteLine(name + 1);
+
+//=====================================================
+// Console.WriteLine("Enter a number: ");
+// int name = int.Parse(Console.ReadLine()!);
+
+// Console.WriteLine(name + 1);
+
+//=====================================================
+
