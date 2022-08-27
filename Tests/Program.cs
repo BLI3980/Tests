@@ -95,38 +95,3 @@
 
 
 
-Console.Clear();
-
-void FillPrint2DArray(int[,] arr) // Randomly fill out 2D array with integers and print it to the terminal
-{
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        Console.Write("{");
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            if (j < arr.GetLength(1) - 1)
-            {
-                if (arr[i, j] == -10) Console.Write($"{arr[i, j]}, ");
-                if ((arr[i, j] >= -9) && (arr[i, j] < 0)) Console.Write($"{arr[i, j]},  ");
-                if (arr[i, j] == 10) Console.Write($" {arr[i, j]}, ");
-                if ((arr[i, j] <= 9) && (arr[i, j] >= 0)) Console.Write($" {arr[i, j]},  ");
-            }
-            else
-            {
-                if (arr[i, j] == -10) Console.Write($"{arr[i, j]} ");
-                if ((arr[i, j] >= -9) && (arr[i, j] < 0)) Console.Write($"{arr[i, j]}  ");
-                if (arr[i, j] == 10) Console.Write($" {arr[i, j]} ");
-                if ((arr[i, j] <= 9) && (arr[i, j] >= 0)) Console.Write($" {arr[i, j]}  ");
-            }
-        }
-        Console.Write("}");
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-}
-
-
-
-
-int[,] array = new int[5, 5];
-FillPrint2DArray(array);
