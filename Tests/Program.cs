@@ -93,5 +93,33 @@
 //=====================================================
 
 
+void FillPrint2DArray(int[,] arr) // Randomly fill out 2D array with integers and print it to the terminal
+{
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
+        Console.Write("--------");
+    }
+    Console.Write("-");
+    Console.WriteLine();
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        Console.Write("|");
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            arr[i, j] = new Random().Next(-10, 11);
+            if (arr[i, j] < 0) Console.Write(arr[i, j] + "	" + "| ");
+            else Console.Write(" " + arr[i, j] + "	" + "| ");
+        }
+        Console.WriteLine();
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write("--------");
+        }
+        Console.Write("-");
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
 
-
+int[,] array = new int[5, 5];
+FillPrint2DArray(array);
