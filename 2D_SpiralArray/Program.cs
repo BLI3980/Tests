@@ -67,8 +67,8 @@ void PrintArray(int[,] array, int size) // Print 2D array in a table with rows a
     Console.WriteLine(); //Spacer line
 }
 
-int arrSize = new Random().Next(3, 10);
-int[,] array2D = new int[arrSize, arrSize];
+int arrSize = new Random().Next(3, 10); // Randomly select the size of square array from 3 to 10
+int[,] array2D = new int[arrSize, arrSize]; // Declare new empty square array
 
 Console.WriteLine("Array size is randomly chosen from the range 3 to 10.");
 Console.WriteLine($"The size of this random array is {arrSize} x {arrSize}.");
