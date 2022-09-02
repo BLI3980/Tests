@@ -93,33 +93,97 @@
 //=====================================================
 
 
-void FillPrint2DArray(int[,] arr) // Randomly fill out 2D array with integers and print it to the terminal
-{
-    for (int j = 0; j < arr.GetLength(1); j++)
-    {
-        Console.Write("--------");
-    }
-    Console.Write("-");
-    Console.WriteLine();
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        Console.Write("|");
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            arr[i, j] = new Random().Next(-10, 11);
-            if (arr[i, j] < 0) Console.Write(arr[i, j] + "	" + "| ");
-            else Console.Write(" " + arr[i, j] + "	" + "| ");
-        }
-        Console.WriteLine();
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            Console.Write("--------");
-        }
-        Console.Write("-");
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-}
 
-int[,] array = new int[5, 5];
-FillPrint2DArray(array);
+// Fill 3D Array Non-Repeat
+// =========================================================================================================================
+
+// int[,,] array = new int[3, 3, 3]; // The size of array is chosen 4 x 11 x 4 in order to 
+//                                   // accommodate as much of two-digit positive and negative integers as possible
+
+
+// void Fill3DArrNonRepeat(int[,,] arr)
+// {
+//     for (int k = 0; k < arr.GetLength(2); k++)
+//     {
+//         for (int i = 0; i < arr.GetLength(0); i++)
+//         {
+//             for (int j = 0; j < arr.GetLength(1); j++)
+//             {
+//             Repeat:
+//                 int check = new Random().Next(10, 100) * (new Random().Next(0, 2) * 2 - 1);
+//                 // Console.WriteLine($"1. {i} {j} {k}: {check}");
+//                 // Console.ReadKey();
+//                 int k1, i1, j1;
+//                 for (k1 = 0; k1 < arr.GetLength(2); k1++)
+//                 {
+//                     // Console.Write($"k1:{k1} ");
+//                     for (i1 = 0; i1 < arr.GetLength(0); i1++)
+//                     {
+//                         // Console.Write($"i1:{i1} ");
+//                         for (j1 = 0; j1 < arr.GetLength(1); j1++)
+//                         {
+//                             // Console.Write($"j1:{j1} ");
+//                             // Console.WriteLine();
+//                             // Console.WriteLine($"  2. {i1} {j1} {k1}: {arr[i1, j1, k1]}");
+//                             // Console.ReadKey();
+//                             if (arr[i1, j1, k1] == check)
+//                             {
+//                                 goto Repeat;
+//                             }
+//                             // Console.WriteLine($"   2a. {i} {j} {k} | {i1} {j1} {k1}");
+//                             // Console.ReadKey();
+//                             if ((i1 == i) && (j1 == j) && (k1 == k))
+//                             {
+//                                 arr[i, j, k] = check;
+//                                 // Console.WriteLine($"3. {i} {j} {k}: {arr[i, j, k]}");
+//                                 // Console.ReadKey();
+//                                 break;
+//                             }
+//                         }
+//                         // Console.WriteLine();
+//                         if (arr[i, j, k] == check) break;
+//                     }
+//                     if (arr[i, j, k] == check) break;
+//                 }
+//             }
+//             // Console.WriteLine();
+//         }
+//     }
+// }
+
+
+
+
+
+// void Print3DArray(int[,,] arr)
+// {
+//     for (int k = 0; k < arr.GetLength(2); k++)
+//     {
+//         // Console.WriteLine($"Block {k}");
+//         for (int i = 0; i < arr.GetLength(0); i++)
+//         {
+//             for (int j = 0; j < arr.GetLength(1); j++)
+//             {
+//                 Console.Write("{0,4}", arr[i, j, k]);
+//             }
+//             Console.WriteLine();
+//         }
+//         // Console.WriteLine("---------");
+//     }
+// }
+
+// Fill3DArrNonRepeat(array);
+// Print3DArray(array);
+// =========================================================================================================================
+
+
+for (int i = 0; i < 100; i++)
+{
+    for (int j = 0; j < 100; j++)
+    {
+        for (int k = 0; k < 100; k++)
+        {
+            if ((i * j * k) < 178 && (i * j * k) > 174) Console.WriteLine($"{i} {j} {k} {i * j * k}");
+        }
+    }
+}
