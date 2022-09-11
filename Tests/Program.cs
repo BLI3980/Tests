@@ -176,14 +176,20 @@
 // Print3DArray(array);
 // =========================================================================================================================
 
+// 3D array of max size one of its dimensions equal or less to 100.
+// How many or such arrays exists which can accommodate as much of positive and negative
+// two-digit integers?
 
-for (int i = 0; i < 100; i++)
-{
-    for (int j = 0; j < 100; j++)
-    {
-        for (int k = 0; k < 100; k++)
-        {
-            if ((i * j * k) < 178 && (i * j * k) > 174) Console.WriteLine($"{i} {j} {k} {i * j * k}");
-        }
-    }
-}
+// for (int i = 0; i < 100; i++)
+// {
+//     for (int j = 0; j < 100; j++)
+//     {
+//         for (int k = 0; k < 100; k++)
+//         {
+//             if ((i * j * k) < 178 && (i * j * k) > 174) Console.WriteLine($"{i} {j} {k} {i * j * k}");
+//         }
+//     }
+// }
+
+Console.WriteLine(Console.WindowHeight);
+Console.WriteLine(Console.WindowWidth);
